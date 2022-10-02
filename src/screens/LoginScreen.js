@@ -10,7 +10,8 @@ function LoginScreen() {
             <div className="loginScreen_background">
                 <img className="loginScreen_logo" src="https://assets.stickpng.com/images/580b57fcd9996e24bc43c529.png" alt="" />
                 <button onClick={() => setSignIn(true)}
-                    className="loginScreen_button">
+                    className="loginScreen_button"
+                    type="button">
                     Sign In
                 </button>
 
@@ -30,7 +31,8 @@ function LoginScreen() {
                                 <input type='email'
                                     placeholder='Email Address' />
                                 <button onClick={() => setSignIn(true)}
-                                    className="loginScreen_getStarted">
+                                    className="loginScreen_getStarted"
+                                    type="button">
                                     GET STARTED
                                 </button>
                             </form>
