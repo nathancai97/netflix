@@ -6,6 +6,7 @@ import {
 } from 'react-router-dom';
 import HomeScreen from './screens/HomeScreen';
 import './App.css';
+import LoginScreen from './screens/LoginScreen';
 
 function App() {
   const user = null;
@@ -14,7 +15,7 @@ function App() {
     <div className="app">
       <Router>
         {!user ? (
-          <Login />
+          <LoginScreen />
         ) : (
           <Routes>
           <Route path="/" element={<HomeScreen />}/>
