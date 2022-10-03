@@ -14,13 +14,14 @@ function App() {
   const user = null;
 
   useEffect(() => {
-    auth.onAuthStateChanged(userAuth => {
+    const unsubscribe = auth.onAuthStateChanged(userAuth => {
       if(userAuth) {
         console.log(userAuth)
       } else {
-
-      }
-    })
+        
+      };
+    });
+    return unsubscribe;
   }, [])
 
   return (
