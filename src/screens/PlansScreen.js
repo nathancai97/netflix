@@ -47,8 +47,8 @@ function PlansScreen() {
             });
     }, []);
 
-    console.log(products);
-    console.log(subscription);
+    // console.log(products);
+    // console.log(subscription);
 
     const loadCheckout = async (priceId) => {
         const docRef = await db
